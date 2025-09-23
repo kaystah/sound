@@ -9,19 +9,15 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel=File-List href="price.files/filelist.xml">
 <style>
-/* Reset box-sizing for all elements */
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
   font-family: "High Tower Text", serif;
   background: #fff;
 }
-
-/* Responsive Table Wrapper */
 #responsive-table-wrapper {
   width: 100%;
   max-width: 650px;
@@ -29,20 +25,17 @@ body {
   overflow-x: auto;
   padding: 10px;
 }
-
 table {
   width: 100% !important;
   border-collapse: collapse;
   table-layout: auto !important;
   background: #fff;
 }
-
 td, th {
   padding: 0.5em;
   font-size: 1rem;
   word-break: break-word;
 }
-
 @media (max-width: 600px) {
   #responsive-table-wrapper {
     padding: 2px;
@@ -54,8 +47,6 @@ td, th {
     font-size: 1.1rem !important;
   }
 }
-
-/* Copy over your old styles for the table and cells as needed, but avoid fixed widths */
 .xl6525611, .xl6625611, .xl6725611, .xl6825611, .xl6925611, .xl7025611, .xl7125611, .xl7225611, .xl7325611, .xl7425611, .xl7525611, .xl7625611, .xl7725611 {
   padding-top: 1px;
   padding-right: 1px;
@@ -71,28 +62,22 @@ td, th {
   border: none;
   white-space: normal;
 }
-
 .xl7525611, .xl7625611 {
   font-size: 2rem;
   text-align: center;
   border-bottom: 2px solid #000;
 }
-
 .xl7025611, .xl7125611, .xl7225611 {
   font-size: 1.2rem;
 }
-
 .xl7425611 {
   font-size: 1rem;
   text-align: center;
   border: 1px solid #ccc;
 }
-
 .xl7725611 {
   text-align: right;
 }
-
-/* Hide Excel-specific comments */
 [if !excel], [if supportMisalignedColumns] {
   display: none !important;
 }
