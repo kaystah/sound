@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+
+<style type="text/css">
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling if content overflows */
+  
+}
+
+.split-container {
+    display: flex; /* Use flexbox for easy side-by-side layout */
+    height: 10vh; /* Make the container take full viewport height */
+    width: 100%
+ 
+}
+
+.split-left, .split-right, .split-center, .split-charge {
+    flex: 1; /* Each section takes equal width */
+    padding: 0px;  
+    box-sizing: border-box; /* Include padding in element's total width/height */
+    display: flex; /* Use flexbox to center content vertically */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+
+}
+
+.split-left {
+    background-color: #e342c8;
+    color: #000;
+}
+
+.split-right {
+    background-color: #2ac6d4;
+    color: #fff;
+}
+.split-center {
+    background-color: #7438ff;
+    color: #fff;
+}
+.split-charge {
+    background-color: #f5b642;
+    color: #fff;
+}
+.my-background-div {
+  display: flex;
+  width: 100%; /* Set width and height for the div to be visible */
+  height: 88vh;
+  padding: 0px;  
+  background-image: url('website2.gif'); /* Specify the image path */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Scale the image to cover the entire div */
+  background-position: center; /* Center the background image */
+}
+
+.logo  {
+  display: flex;
+  align-items: center; /* Vertically centers the items within the flex container */
+  justify-content: center; /* Horizontally centers the items within the flex container */
+  height: 600px; /* Or a defined height for the container */
+  WIDTH: 2000px; 
+}
+a:link, a:visited, a:active {
+  color: #4444442; /* Replace with your desired color */
+  text-decoration: none;
+}
+ a:hover {
+  color: WHITE; /* Replace with your desired color */
+  text-decoration: none;
+  text-shadow: 1px 1px 15px WHITE;
+}
+</style>
+</head>
+<body align="center">
+    <div class="split-container">
+        <div class="split-left">
+           <a href="roomtour.htm"> <h3>ROOM TOUR</h3></a>
+           
+        </div>
+        <div class="split-right">
+           <a href="AllEquimentList.htm"><h3>EQUIPMENT LIST</h3>
+        </a>
+        </div>
+       
+	<div class="split-center">
+  <a href="mixedbykaystah.htm">
+            	<h3>MIXED BY KAYSTAH</h3>
+        </a>
+        </div>
+
+<div class="split-charge">
+  <a href="price.htm">
+            	<h3>CHARGE LIST</h3>
+        </a>
+        </div>
+    </div>
+    <div class="my-background-div">
+    	<!-- Content inside the div -->
+	<p class="logo">
+<img src="logo.png"> 
+	</p>
+    </div>
+</body>
+</html>

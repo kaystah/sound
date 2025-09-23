@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+
+<style type="text/css">
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the body and html tags take up the full viewport height */
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Stacks the child elements vertically */
+    min-height: 100vh; /* Ensures the container fills at least the full viewport height */
+}
+
+.header {
+    background-color: #3f72af;
+    height: 25vh;
+    color: RED;
+    padding: 20px;
+  background-image: url('lounge.JPG'); /* Specify the image path */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Scale the image to cover the entire div */
+  background-position: center; /* Center the background image */
+}
+.main-content {
+    background-color: #f9f7f7;
+    color: white;
+    padding: 120px;
+    flex: 1; /* This section grows to fill the available space */
+  background-image: url('control.JPG'); /* Specify the image path */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Scale the image to cover the entire div */
+  background-position: center; /* Center the background image */
+}
+
+.footer {
+    background-color: #112d4e;
+    height: 30vh;
+    color: BLACK;
+    padding: 30px;
+  background-image: url('booth.JPG'); /* Specify the image path */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Scale the image to cover the entire div */
+  background-position: center; /* Center the background image */
+}
+
+a:link, a:visited, a:active {
+  color: pink; /* Replace with your desired color */
+  text-decoration: none;
+}
+ a:hover {
+  color: WHITE; /* Replace with your desired color */
+  text-decoration: none;
+  text-shadow: 1px 1px 15px WHITE;
+}
+
+</style>
+</head>
+<body> 
+    <div class="flex-container">
+        
+         <div class="header"><br><br>
+          <h1> <p style="font-size:30px;letter-spacing: 30px" align=center><A HREF="INDEX2.HTM">◄</A>LOUNGE<A HREF="lounge.HTM">►</A></p></h1>
+	
+        </div>
+        <div class="main-content">
+             <h1> <p style="font-size:30px;letter-spacing: 30px" align=center><A HREF="INDEX2.HTM">◄</A>COTROL:ROOM<A HREF="control.HTM">►</A></p></h1>
+
+        </div>
+        <div class="footer"><br><br><br>
+            <h1> <p style="font-size:30px;letter-spacing: 30pX" align=center><A HREF="INDEX2.HTM">◄</A>BOOTH<A HREF="booth.HTM">►</A></p></h1>
+        </div>
+    </div>
+</body>
+</html>
